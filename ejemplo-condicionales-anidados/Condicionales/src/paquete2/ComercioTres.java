@@ -56,25 +56,27 @@ public class ComercioTres {
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
         
-         // opción 1
+         // Funciona ya que los iguales y el "and" se aseguran de que se cumplan
+         //las condiciones
        /* if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
             porcentajeSeguro = porcentajeSeguro + 0;
         } else {
             porcentajeSeguro = 10;
         }
 
-        // opción 2
+        // Si alguien digita el número 0 puede causar problemas y no cumplirse
         if (porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
 
-         parece el mejor ya que el "or" verifica que las dos conciones
+         parece el mejor ya que el "or" verifica que las dos condiciones
          sean falsas y no cambiar el valor de la variable
        */ if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
 
-        // opción 4
+        // La inexistencia de iguales "=" en la comparación evita que pongamos
+        // un número como el 15 que cumpliría el problema planteado
         /*if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
