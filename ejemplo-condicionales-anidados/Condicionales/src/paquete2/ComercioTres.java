@@ -68,7 +68,8 @@ public class ComercioTres {
             porcentajeSeguro = 10;
         }
 
-         // opción 3
+         parece el mejor ya que el "or" verifica que las dos conciones
+         sean falsas y no cambiar el valor de la variable
        */ if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
