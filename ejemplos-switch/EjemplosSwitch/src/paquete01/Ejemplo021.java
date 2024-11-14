@@ -33,47 +33,50 @@ public class Ejemplo021 {
 
         System.out.println("Ingrese el número de día de la semana");
         int numeroDia = entrada.nextInt();
+        
+        System.out.println("Ingrese el número de mes del año");
+        int numeroMes = entrada.nextInt();
+        
+        System.out.println("Ingrese el año correspondiente");
+        int numeroyear = entrada.nextInt();
+        
+        String mesCadena = " ";
 
         switch (numeroDia) {
             case 1:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Lunes");
+                mesCadena = "Lunes";
                 break;
-
+                
             case 2:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Martes");
+                mesCadena = "Martes";
                 break;
 
             case 3:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Miércoles");
+                mesCadena = "Miercoles";
                 break;
 
             case 4:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Jueves");
+                mesCadena = "Jueves";
                 break;
 
             case 5:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Viernes");
+                mesCadena = "Viernes";
                 break;
 
             case 6:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Sábado");
+                mesCadena = "Sabado";
                 break;
 
             case 7:
-                System.out.printf("Día %d es %s\n", numeroDia, 
-                        "Domingo");
+                mesCadena = "Domingo";
                 break;
 
             default:
                 System.out.println("Opción incorrecta");
                 break;
         }
-
+        System.out.printf("Ustded ha nacido el %s %d del %d/n", mesCadena ,
+                numeroDia , numeroyear);
+                
     }
 }
