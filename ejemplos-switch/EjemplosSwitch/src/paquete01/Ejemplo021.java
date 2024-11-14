@@ -44,39 +44,59 @@ public class Ejemplo021 {
 
         switch (numeroDia) {
             case 1:
-                mesCadena = "Lunes";
+                mesCadena = "Enero";
                 break;
                 
             case 2:
-                mesCadena = "Martes";
+                mesCadena = "Febrero";
                 break;
 
             case 3:
-                mesCadena = "Miercoles";
+                mesCadena = "Marzo";
                 break;
 
             case 4:
-                mesCadena = "Jueves";
+                mesCadena = "Abril";
                 break;
 
             case 5:
-                mesCadena = "Viernes";
+                mesCadena = "Mayo";
                 break;
 
             case 6:
-                mesCadena = "Sabado";
+                mesCadena = "Junio";
                 break;
 
             case 7:
-                mesCadena = "Domingo";
+                mesCadena = "Agosto";
+                break;
+                
+            case 8:
+                mesCadena = "Septiembre";
+                break;
+                
+            case 9:
+                mesCadena = "Octubre";
+                break;
+                
+            case 10:
+                mesCadena = "Julio";
+                break;
+                
+            case 11:
+                mesCadena = "Noviembre";
+                break;
+                
+            case 12:
+                mesCadena = "Diciembre";
                 break;
 
             default:
                 System.out.println("Opción incorrecta");
                 break;
         }
-        System.out.printf("Ustded ha nacido el %s %d del %d/n", mesCadena ,
-                numeroDia , numeroyear);
+        System.out.printf("Ustded ha nacido el %d de %s del %d", numeroDia ,
+                mesCadena , numeroyear);
                 
     }
 }
