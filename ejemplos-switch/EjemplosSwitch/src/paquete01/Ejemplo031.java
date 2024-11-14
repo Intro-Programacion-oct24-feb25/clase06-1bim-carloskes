@@ -34,7 +34,7 @@ public class Ejemplo031 {
         System.out.println("Ingrese donde estudia");
         String uni = entrada.nextLine();
         uni = uni.toLowerCase ();
-        
+        String nombreap2 = nombreap.toLowerCase();
         
         // nombre = "atacames"
         char valor = nombreap.charAt(0); // obtener el primer caracter de una
@@ -48,11 +48,13 @@ public class Ejemplo031 {
             case 'i':
             case 'o':
             case 'u':
-            nombreap = nombreap.toUpperCase();
+            System.out.printf("%s con edad %s , es estudiante de %s", 
+                        nombreap.toUpperCase() , edad , uni.toUpperCase());
                 break;
             
             default:
-                System.out.println("Ingrese un nombre correcto");
+                System.out.printf("%s con edad %s , es estudiante de %s", 
+                        nombreap2 , edad , uni.toUpperCase());
                 break;
                 
             
